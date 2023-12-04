@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="layout">
+        <div class="todo">
+            <div class="head">
+                <h2>To Do</h2>
+                <span>1</span>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+                <div class="text">
+                    <h3>Todo</h3>
+                    <p>This is todo card</p>
+                    <button>high</button>
+                </div>
+                <div class="icon">
+                    <i class="fa-solid fa-x"></i>
+                    <i class="fa-regular fa-pen-to-square"></i>
+                </div>
+            </div>
+            <div class="add_card">
+                <div class="plus">+</div>
+                <p>Add card</p>
+            </div>
+        </div>
+        <div class="todo">
+                <div class="head">
+                    <h2>In progress</h2>
+                    <span>0</span>
+                </div>
+                <div class="add_card">
+                    <div class="plus">+</div>
+                    <p>Add card</p>
+                </div>
+        </div>
+        <div class="todo">
+                <div class="head">
+                    <h2>Stuck</h2>
+                    <span>0</span>
+                </div>
+                <div class="add_card">
+                    <div class="plus">+</div>
+                    <p>Add card</p>
+                </div>
+        </div>
+        <div class="todo">
+                <div class="head">
+                    <h2>Done</h2>
+                    <span>0</span>
+                </div>
+                <div class="add_card">
+                    <div class="plus">+</div>
+                    <p>Add card</p>
+                </div>
+        </div>
+    </div>
+    <div class="task_container">
+        <div class="task">
+            <div class="add_task">
+                <h1>Add Task</h1>
+            </div>
+            <div class="title">
+                <p>Title</p>
+                <input type="text" id="titleInput" />
+            </div>
+            <div class="description">
+                <p>Description</p>
+                <textarea id="textarea" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div class="status">
+                <p>Status</p>
+                <select name="" id="selectId">
+                    <option value="todo">to do</option>
+                    <option value="progress">In progress</option>
+                    <option value="Stuck">Stuck</option>
+                    <option value="Done">Done</option>
+                </select>
+            </div>
+            <div class="prio">
+                <p>Priority</p>
+                <select name="" id="selectP">
+                    <option value="Low">Low</option>
+                    <option value="Medium">Medium</option>
+                    <option value="High">High</option>
+                </select>
+            </div>
+            <input class="add_button" type="submit" value="Add Task">
+        </div>
+    </div>
+</body>
+<script src="https://kit.fontawesome.com/45191d5154.js" crossorigin="anonymous"></script>
+<script src="todo.js"></script>
+</html>
